@@ -48,21 +48,23 @@ maindivEl.style.margin = "0 auto";
 maindivEl.style.justifyContent = "space-evenly";
 maindivEl.style.alignItems = "center";
 
+
 maindivEl.style.width = "1000px";
 
-maindivEl.style.height = "700px";
+maindivEl.style.height = "400px";
 
 div1El.style.backgroundColor = "LightSteelBlue";
-div1El.style.width = "50px";
-div1El.style.height = "350px";
+div1El.style.width = "55px";
+div1El.style.height = "250px";
+
 
 div2El.style.backgroundColor = "LightSteelBlue";
-div2El.style.width = "50px";
-div2El.style.height = "350px";
+div2El.style.width = "55px";
+div2El.style.height = "250px";
 
 div3El.style.backgroundColor = "LightSteelBlue";
-div3El.style.width = "50px";
-div3El.style.height = "350px";
+div3El.style.width = "55px";
+div3El.style.height = "250px";
 
 document.body.append(maindivEl);
 
@@ -71,11 +73,14 @@ const kolum1El = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 for (let y = 0; y < kolum1El.length; y++) {
   const pEl = document.createElement("p");
   pEl.style.display = "flex";
-  pEl.style.paddingLeft = "5px";
-  pEl.style.marginLeft = "5px";
+  pEl.style.paddingLeft = "10px";
+  
 
-  pEl.style.textAlign = "center";
-  pEl.style.width = "30px";
+  
+  pEl.style.width = "35px";
+  pEl.style.margin = "0 0 0"
+  pEl.style.marginLeft = "5px";
+  
 
   pEl.innerText = kolum1El[y];
 
@@ -93,6 +98,9 @@ for (let y = 0; y < kolum1El.length; y++) {
     pEl.style.color = "white";
 
   }
+  if (y === 0){
+    pEl.style.marginTop = "35px"
+  }
 }
 
 const kolum2El = ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"];
@@ -100,8 +108,12 @@ const kolum2El = ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"];
 for (let x = 0; x < kolum2El.length; x++) {
   const p2El = document.createElement("p");
   p2El.style.display = "flex";
-  p2El.style.paddingLeft = "5px";
-  p2El.style.marginLeft = "5px";
+  p2El.style.paddingLeft = "10px";
+  p2El.style.margin = "0 0 0"
+  p2El.style.marginLeft = "7px";
+  
+  
+
 
   p2El.style.textAlign = "center";
   p2El.style.justifyContent = "center";
@@ -122,6 +134,10 @@ for (let x = 0; x < kolum2El.length; x++) {
     p2El.style.backgroundColor = "";
     p2El.style.color = "white";
 
+  }
+
+  if (x === 0){
+    p2El.style.marginTop = "35px"
   }
 
   
@@ -145,12 +161,13 @@ const kolum3El = [
 for (let z = 0; z < kolum3El.length; z++) {
   const p3El = document.createElement("p");
   p3El.style.display = "flex";
-  p3El.style.paddingLeft = "5px";
-  p3El.style.marginLeft = "15px";
-
+  p3El.style.paddingLeft = "10px";
   p3El.style.textAlign = "end";
   p3El.style.justifyContent = "end";
   p3El.style.width = "30px";
+  p3El.style.margin = "0 0 0"
+  p3El.style.marginLeft = "7px";
+
 
   p3El.innerText = kolum3El[z];
 
@@ -193,4 +210,8 @@ for (let z = 0; z < kolum3El.length; z++) {
     p3El.style.backgroundColor = "white";
     p3El.style.color = "black"
   }
+  if (z === 0){
+    p3El.style.marginTop = "35px"
+  }
+
 }
