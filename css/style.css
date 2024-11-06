@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+}
+
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
