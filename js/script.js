@@ -3,7 +3,12 @@ const rader = ["Rad 1", "Rad 2", "Rad 3", "Rad 4", "Rad 5"];
 for (let i = 0; i < rader.length; i++) {
   const h1El = document.createElement("h1");
 
+  h1El.style.display = "flex"
+  h1El.style.justifyContent = "center"
+  h1El.style.margin = "auto"
+  h1El.style.marginTop = "20px"
   h1El.style.textAlign = "center";
+  h1El.style.width = "1000px"
 
   h1El.innerText = rader[i];
 
@@ -45,6 +50,7 @@ maindivEl.style.border = "2px solid black";
 
 maindivEl.style.display = "flex";
 maindivEl.style.margin = "0 auto";
+maindivEl.style.marginTop = "30px"
 maindivEl.style.justifyContent = "space-evenly";
 maindivEl.style.alignItems = "center";
 
