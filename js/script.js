@@ -1,35 +1,24 @@
 const rader = ["Rad 1", "Rad 2", "Rad 3", "Rad 4", "Rad 5"];
+const fontSizes = ["20px", "34px", "42px", "50px", "58px"];
+const backgroundColor = ["hsl(180, 100%, 50%)", "hsl(200, 100%, 50%)", "hsl(210, 100%, 50%)", "hsl(220, 100%, 50%)", "hsl(230, 100%, 50%)"]; 
 
 for (let i = 0; i < rader.length; i++) {
   const h1El = document.createElement("h1");
 
-  h1El.style.display = "flex"
-  h1El.style.justifyContent = "center"
-  h1El.style.margin = "auto"
-  h1El.style.marginTop = "20px"
+  h1El.style.display = "flex";
+  h1El.style.justifyContent = "center";
+  h1El.style.margin = "auto";
+  h1El.style.marginTop = "20px";
   h1El.style.textAlign = "center";
-  h1El.style.width = "1000px"
-
+  h1El.style.width = "1000px";
+  
   h1El.innerText = rader[i];
 
   document.body.append(h1El);
 
-  if (i === 0) {
-    h1El.style.fontSize = "20px";
-    h1El.style.backgroundColor = "hsl(180, 100%, 50%)";
-  } else if (i === 1) {
-    h1El.style.fontSize = "34px";
-    h1El.style.backgroundColor = "hsl(200, 100%, 50%)";
-  } else if (i === 2) {
-    h1El.style.fontSize = "42px";
-    h1El.style.backgroundColor = "hsl(210, 100%, 50%)";
-  } else if (i === 3) {
-    h1El.style.fontSize = "50px";
-    h1El.style.backgroundColor = "hsl(220, 100%, 50%)";
-  } else if (i === 4) {
-    h1El.style.fontSize = "58px";
-    h1El.style.backgroundColor = "hsl(230, 100%, 50%)";
-  }
+  h1El.style.fontSize = fontSizes[i];
+  h1El.style.backgroundColor = backgroundColor[i];
+  
 }
 
 const maindivEl = document.createElement("div");
@@ -50,10 +39,9 @@ maindivEl.style.border = "2px solid black";
 
 maindivEl.style.display = "flex";
 maindivEl.style.margin = "0 auto";
-maindivEl.style.marginTop = "30px"
+maindivEl.style.marginTop = "30px";
 maindivEl.style.justifyContent = "space-evenly";
 maindivEl.style.alignItems = "center";
-
 
 maindivEl.style.width = "1000px";
 
@@ -62,7 +50,6 @@ maindivEl.style.height = "400px";
 div1El.style.backgroundColor = "LightSteelBlue";
 div1El.style.width = "55px";
 div1El.style.height = "250px";
-
 
 div2El.style.backgroundColor = "LightSteelBlue";
 div2El.style.width = "55px";
@@ -80,13 +67,10 @@ for (let y = 0; y < kolum1El.length; y++) {
   const pEl = document.createElement("p");
   pEl.style.display = "flex";
   pEl.style.paddingLeft = "10px";
-  
 
-  
   pEl.style.width = "35px";
-  pEl.style.margin = "0 0 0"
+  pEl.style.margin = "0 0 0";
   pEl.style.marginLeft = "5px";
-  
 
   pEl.innerText = kolum1El[y];
 
@@ -99,13 +83,12 @@ for (let y = 0; y < kolum1El.length; y++) {
     pEl.style.backgroundColor = "white";
   }
 
-  if( y === 4){
+  if (y === 4) {
     pEl.style.backgroundColor = "";
     pEl.style.color = "white";
-
   }
-  if (y === 0){
-    pEl.style.marginTop = "35px"
+  if (y === 0) {
+    pEl.style.marginTop = "35px";
   }
 }
 
@@ -115,11 +98,8 @@ for (let x = 0; x < kolum2El.length; x++) {
   const p2El = document.createElement("p");
   p2El.style.display = "flex";
   p2El.style.paddingLeft = "10px";
-  p2El.style.margin = "0 0 0"
+  p2El.style.margin = "0 0 0";
   p2El.style.marginLeft = "7px";
-  
-  
-
 
   p2El.style.textAlign = "center";
   p2El.style.justifyContent = "center";
@@ -136,20 +116,15 @@ for (let x = 0; x < kolum2El.length; x++) {
     p2El.style.backgroundColor = "white";
   }
 
-  if( x === 1){
+  if (x === 1) {
     p2El.style.backgroundColor = "";
     p2El.style.color = "white";
-
   }
 
-  if (x === 0){
-    p2El.style.marginTop = "35px"
+  if (x === 0) {
+    p2El.style.marginTop = "35px";
   }
-
-  
-
-  }
-
+}
 
 const kolum3El = [
   "ett",
@@ -171,53 +146,26 @@ for (let z = 0; z < kolum3El.length; z++) {
   p3El.style.textAlign = "end";
   p3El.style.justifyContent = "end";
   p3El.style.width = "30px";
-  p3El.style.margin = "0 0 0"
+  p3El.style.margin = "0 0 0";
   p3El.style.marginLeft = "7px";
-
 
   p3El.innerText = kolum3El[z];
 
   div3El.appendChild(p3El);
 
   if (z === 0) {
-    p3El.style.backgroundColor = "black";
-    p3El.style.color = "white"
-  }
-  if (z === 1) {
-    p3El.style.backgroundColor = "white";
-    p3El.style.color = "black"
-  }
-  if (z === 2) {
-    p3El.style.backgroundColor = "black";
-    p3El.style.color = "white"
-  }
-  if (z === 3) {
-    p3El.style.backgroundColor = "white";
-    p3El.style.color = "black"
-  }
-  if (z === 4) {
-    p3El.style.backgroundColor = "black";
-    p3El.style.color = "white"
-  }
-  
-  if (z === 6) {
-    p3El.style.backgroundColor = "black";
-    p3El.style.color = "white"
-  }
-  if (z === 7) {
-    p3El.style.backgroundColor = "white";
-    p3El.style.color = "black"
-  }
-  if (z === 8) {
-    p3El.style.backgroundColor = "black";
-    p3El.style.color = "white"
-  }
-  if (z === 9) {
-    p3El.style.backgroundColor = "white";
-    p3El.style.color = "black"
-  }
-  if (z === 0){
-    p3El.style.marginTop = "35px"
+    p3El.style.marginTop = "35px";
   }
 
+  if (z === 5) {
+    p3El.backgroundColor = "";
+  } 
+  else if (z % 2 === 0) {
+    p3El.style.backgroundColor = "black";
+    p3El.style.color = "white";
+  } 
+  else {
+    p3El.style.backgroundColor = "white";
+    p3El.style.color = "black";
+  }
 }
